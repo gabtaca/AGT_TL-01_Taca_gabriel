@@ -1,0 +1,279 @@
+@import "./variables.scss";
+@import "./_font";
+@import "./animations";
+
+html {
+	scroll-behavior: smooth;
+}
+
+ul{
+    padding: 0;
+}
+
+.hr_line{
+    width: 60vw;
+    border: 1px solid rgb(148, 148, 148);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: rgb(231, 228, 228);
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+a:link{
+    text-decoration: none;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.header_page{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+    transition: height 0.3s ease;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_page_minimize{
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    top: 0;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.32);
+    transition: all 0.3s ease-in-out;
+}
+
+#h1_header{
+    font-family: 'Londrina', solid;
+    
+}
+
+.div_resp{
+    display: flex;
+}
+
+.ul_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 2rem;
+    padding-top: 2rem;
+
+}
+
+.main_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 80vw;
+    height: 4rem;
+    background-color: aqua;
+    border-radius: 40px;
+    -webkit-box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.43); 
+    box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.43);
+}
+
+
+.btn_section{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50px;
+    background: none;
+    border: none;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.h2_section{
+    padding-left: 50px;
+}
+
+.open_icon {
+    display: block;
+}
+
+.close_icon {
+    display: none;
+}
+
+
+.div_hidden {
+    display: none;
+    width: 70%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    background-color: lightgray;
+    text-align: center;
+    z-index: -1;
+    -webkit-border-bottom-right-radius: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    -moz-border-radius-bottomright: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    padding-bottom: 50px;
+}
+
+
+.anim_square{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: aqua;
+    animation: myAnim 4s ease 0s infinite normal forwards;
+    
+}
+
+.div_shadow{
+    display: flex;
+    gap:1rem;
+}
+
+.boxshadow_pop{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+    animation: shadow-pop-tr 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+}
+
+.boxshadow_inset_color{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-animation: shadow-inset-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	animation: shadow-inset-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+.boxshadow_square{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-animation: shadow-drop-center 1s steps(3, end) both;
+    animation: shadow-drop-center 1s infinite both;
+}
+
+.box_border{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    animation: border 4s infinite;
+}
+
+.box_transition {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    .box_transition:hover {
+    width: 8rem;
+    transition: width ease-in-out 2s; 
+}
+}
+
+
+
+.ul_section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: baseline;
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container_z{
+    display: flex;
+    padding-bottom: 75px;
+}
+
+#container {
+    display: block;
+    position: absolute;
+    background-color: lightblue;
+    border: 1px solid #333333;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.5;
+}
+
+#myBox {
+    position: relative;
+    opacity: 1;
+    width: 4rem;
+    height: 4rem;
+    background-color: coral;
+    z-index: 1;
+    animation: zmove 5s infinite linear;
+}
+
+.div_z{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.5;
+    background-color: lightblue;
+    border: 1px solid #333333;
+}
+
+
+footer{
+    height: 20rem;
+    background-color: grey;
+    margin-top: 2rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
