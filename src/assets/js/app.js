@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const headers = document.querySelectorAll("header");
     headers.forEach(header => {
-        // Generate a random color
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-        // Set the background color of the section
         header.style.backgroundColor = randomColor;
-        // Set a solid 1px border with the random color
         header.style.border = `1px solid ${randomColor}`;
     });
 });
@@ -33,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const headerPage = document.querySelector('.header_page, .header_page_minimize');
         
-        if (window.scrollY > 150) {
+        if (window.scrollY > 200) {
             if (!headerPage.classList.contains('header_page_minimize')) {
                 headerPage.classList.replace('header_page', 'header_page_minimize');
             }
@@ -68,13 +65,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Add click event listeners to each <a> in the ul_header
+r
     const links = document.querySelectorAll('.ul_header a');
     links.forEach(function(link) {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default anchor behavior
-            const sectionId = link.getAttribute('href').substring(1); // Get the section ID from the href attribute
-            scrollToSection(sectionId); // Scroll to the section
+            event.preventDefault(); 
+            const sectionId = link.getAttribute('href').substring(1); 
+            scrollToSection(sectionId); 
         });
     });
 });
+
+let mybutton = document.querySelector(".div_back-to-top");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+}
+

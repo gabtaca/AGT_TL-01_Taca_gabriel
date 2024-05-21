@@ -59,4 +59,33 @@
   50% {
     z-index: 5;
   }
+}
+@keyframes myfilter {
+  0% {
+    filter: blur(0px);
+  }
+  10% {
+    filter: blur(10px);
+  }
+  30% {
+    filter: blur(0px);
+  }
+  40% {
+    filter: sepia(0%);
+  }
+  50% {
+    filter: sepia(100%);
+  }
+  60% {
+    filter: sepia(0%);
+  }
+  70% {
+    filter: hue-rotate(0deg);
+  }
+  80% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+  }
 }/*# sourceMappingURL=animations.css.map */

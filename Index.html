@@ -171,6 +171,8 @@
                     <p>CSS:animation:;</p>
                     <p>CSS:-web-kit-animation:;</p>
                 </div>
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow"> Box-shadow mdn web docs</a>
+                <a href="https://html-css-js.com/css/generator/box-shadow/"> Box-shadow generator</a>
             </div>
         </section>
         <section class="main_section" id="c">
@@ -215,8 +217,33 @@
                 </button>
             </header>
             <div class="div_hidden" id="div_hidden">
-                <h3></h3>
-                <div></div>
+                <h3>La propriété Display</h3>
+                    <ul class="ul_section">
+                        <li><h4>inline</h4><p>Displays an element as an inline element (like span). Any height and width properties will have no effect. This is default.</p></li>
+                        <li><h4>block</h4><p>Displays an element as a block element (like p). It starts on a new line, and takes up the whole width	</p></li>
+                        <li><h4>contents</h4><p></p></li>
+                        <li><h4>flex</h4><p>Makes the container disappear, making the child elements children of the element the next level up in the DOM</p></li>
+                        <li><h4>grid</h4><p>Displays an element as a block-level flex container</p></li>
+                        <li><h4>inline-block</h4><p>Displays an element as a block-level grid container</p></li>
+                        <li><h4>inline-flex</h4><p>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values</p></li>
+                        <li><h4>inline-grid</h4><p>Displays an element as an inline-level flex container</p></li>
+                        <li><h4>inline-table</h4><p>Displays an element as an inline-level grid container</p></li>
+                        <li><h4>list-item</h4><p>The element is displayed as an inline-level table</p></li>
+                        <li><h4>run-in</h4><p>Let the element behave like a 
+                        <li> <h4>element</h4><p>Displays an element as either block or inline, depending on context</p></li>
+                        <li><h4>table</h4><p>Let the element behave like a 'table' element</p></li>
+                        <li><h4>table-caption</h4><p>Let the element behave like a 'caption' element</p></li>
+                        <li><h4>table-column-group</h4><p>Let the element behave like a 'colgroup' element</p></li>
+                        <li><h4>table-header-group</h4><p>Let the element behave like a 'thead' element</p></li>
+                        <li><h4>table-footer-group</h4><p>Let the element behave like a 'tfoot' element</p></li>
+                        <li><h4>table-row-group</h4><p>Let the element behave like a 'tbody' element</p></li>
+                        <li><h4>table-cell</h4><p>Let the element behave like a 'td' element</p></li>
+                        <li><h4>table-column</h4><p>Let the element behave like a 'col' element</p></li>
+                        <li><h4>table-row</h4><p>Let the element behave like a 'tr' element</p></li>
+                        <li><h4>none</h4><p>The element is completely removed</p></li>
+                        <li><h4>initial</h4><p>Sets this property to its default value</p><a href="https://www.w3schools.com/cssref/css_initial.php">Initial</a></li>
+                        <li><h4>inherit</h4><p>Inherits this property from its parent element</p><a href="https://www.w3schools.com/cssref/css_inherit.php">inherit</a></li>
+                    </ul>
                 <div></div>
                 <div></div>
             </div>
@@ -237,7 +264,7 @@
             </header>
             <div class="div_hidden" id="div_hidden">
                 <h3></h3>
-                <div></div>
+
                 <div></div>
                 <div></div>
             </div>
@@ -257,9 +284,25 @@
                 </button>
             </header>
             <div class="div_hidden" id="div_hidden">
-                <h3></h3>
-                <div></div>
-                <div></div>
+                <h3>Les filtres</h3>
+                <p>La propriété CSS filter permet d'appliquer des filtres et d'obtenir des effets graphiques de flou, de saturation, etc. Les filtres sont généralement utilisés pour ajuster le rendu d'une image, d'un arrière-plan ou des bordures.</p>
+                <div><img class="img_filtre" src="./src/assets/images/Firefly le mot css sur ordinateur multicolor funky 93366.jpg" alt="image avec filtres anime"></div>
+                <div>
+                    <ul class="ul_section">
+                        <h4>Les sortes de filtres applicables</h4>
+                        <li>blur(5px)</li>
+                        <li>brightness(0.4)</li>
+                        <li>contrast(200%)</li>
+                        <li>drop-shadow(16px 16px 20px blue)</li>
+                        <li>grayscale(50%)</li>
+                        <li>hue-rotate(90deg)</li>
+                        <li>invert(75%)</li>
+                        <li>opacity(25%)</li>
+                        <li>saturate(30%)</li>
+                        <li>sepia(60%)</li>
+                        <h4>.class{filter:exemple de filre;}</h4>
+                    </ul>
+                </div>
                 <div></div>
             </div>
         </section>
@@ -521,25 +564,26 @@
             </header>
             <div class="div_hidden" id="div_hidden">
                 <h3>Responsive Design</h3>
-                <div class="div_resp">                <ul class="ul_section">
-                    <li>
-                        <h4>Media queries</h4>
-                        <p>Elles permettent d’appliquer des styles en fonction de la taille de l’écran ou d’autres
-                            conditions d’affichage.</p>
-                            <p>@media screen and (min-width: XXpx){}</p>
-                    </li>
-                    <li>
-                        <h4>Flexbox</h4>
-                        <p>Un modèle de mise en page qui facilite la création de designs flexibles et adaptatifs. En utilisant les paramètres display:flex</p>
-                    </li>
-                    <li>
-                        <h4>Grid Layout</h4>
-                        <p>Une autre innovation de mise en page, permettant de créer des grilles complexes avec une
-                            grande facilité.</p>
-                            <p>display: grid;</p>
-                            <p>grid-template-columns:</p>
-                    </li>
-                </ul></div>
+                <div class="div_resp">                
+                    <ul class="ul_section">
+                        <li>
+                            <h4>Media queries</h4>
+                            <p>Elles permettent d'appliquer des styles en fonction de la taille de l'écran ou d'autres
+                                conditions d'affichage.</p>
+                                <p>@media screen and (min-width: XXpx){}</p>
+                        </li>
+                        <li>
+                            <h4>Flexbox</h4>
+                            <p>Un modèle de mise en page qui facilite la création de designs flexibles et adaptatifs. En utilisant les paramètres display:flex</p>
+                        </li>
+                        <li>
+                            <h4>Grid Layout</h4>
+                            <p>Une autre innovation de mise en page, permettant de créer des grilles complexes avec une
+                                grande facilité.</p>
+                                <p>display: grid;</p>
+                                <p>grid-template-columns:</p>
+                        </li>
+                    </ul></div>
                 <div></div>
             </div>
         </section>
@@ -569,22 +613,15 @@
                         <h4>Ombres portées(voir Box shadows)</h4>
                         <p>La propriété box-shadow permet d’ajouter des ombres à
                             des éléments, ajoutant de la profondeur et de l’accentuation.</p>
-                    </li>
+                    </li>                
                     <li>
                         <h4>Transformations(voir Animtation)</h4>
                         <p>Les transformations, comme rotate, scale ou translate,
                             permettent de modifier la forme, la taille ou la position d’un élément.</p>
                     </li>
-                </ul>
-                <hr class="hr_line">
-                </hr>
-                <div>
-
-                    <h3>SASS</h3>
+                    <hr class="hr_line">
+                    </hr>
                     <p>Sass est une extension de CSS qui ajoute puissance et élégance au langage de base.</p>
-                </div>
-                <div>
-                    <ul class="ul_section">
                         <li>
                             <h4>Nesting</h4>
                             <p>Vous pouvez imbriquer des règles CSS à l'intérieur d'autres règles, ce qui permet une
@@ -630,7 +667,6 @@
                             <p>Importe un autre fichier Sass ou CSS dans le fichier Sass actuel. Cela vous permet de
                                 moduler vos feuilles de style et de les organiser de manière plus structurée.</p>
                         </li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -649,7 +685,7 @@
                 </button>
             </header>
             <div class="div_hidden" id="div_hidden">
-                <h3>Transitions</h3>
+                <h3>Transitions(WIP)</h3>
                 <p>Les transitions CSS permettent de changer les valeurs des propriétés de façon controlée avec un durée
                     établie</p>
                 <div class="box_transition"></div>
@@ -661,6 +697,25 @@
                         <li>transition-timing-function</li>
                     </ul>
                 </div>
+                <hr class="hr_line">
+                <h3>Transform</h3>
+                <div class="anim_square"></div>
+                <br>
+                <h3>Exemple de propriétés à transformer</h3>
+                <ul class="ul_section">
+                    <li><h4>Transformers...roll out!</h4></li>
+                    <li>none</li>
+                    <li>matrix a 6 ou 16 valeurs (n,n,n,n,n,n) ou (4x4)</li>
+                    <li>translate (x,y) 3d (x,y,z)</li>
+                    <li>scale (x,y) 3d (x,y,z)</li>
+                    <li>rotate (angle) 3d(x,y,z,angle)</li>
+                    <li>skew (x-angle, y-angle)</li>
+                    <li>perspective (n)</li>
+                    <li>initial</li>
+                    <li>inherit</li>
+                </ul>
+                <a href="https://html-css-js.com/css/generator/transform/">Transform generator</a>
+                <a href="https://www.w3schools.com/cssref/css3_pr_transform.php">w3schools</a>
             </div>
         </section>
         <section class="main_section" id="u">
@@ -802,8 +857,19 @@
                 </div>
             </div>
         </section>
+        <div class="div_back-to-top" onclick="topFunction()">
+            
+            <button class="btn_back-to-top">
+                Back to Top
+                
+            </button>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Gabriel Taca</p>
+        <p><time datetime="2024-05-22">Mai 2024</time></p>
+        <p>582 AGT LI</p>
+    </footer>
 </body>
 
 </html>
