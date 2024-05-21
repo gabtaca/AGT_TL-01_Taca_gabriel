@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Ensure the page starts completely at the top on load
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 0);
 
     const headers = document.querySelectorAll("header");
     headers.forEach(header => {
