@@ -145,21 +145,17 @@ a:visited {
 
 .header_page {
   display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: column;
-  height: 15rem;
+  height: 8rem;
+  padding: 3rem 0;
   justify-content: center;
   align-items: center;
   background-color: grey;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
-  transition: height 0.3s ease;
+  transition: padding 0.3s ease;
   z-index: 10;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 6;
 }
 
 .header_page_minimize {
@@ -167,12 +163,12 @@ a:visited {
   position: sticky;
   flex-direction: column;
   top: 0;
-  height: 10rem;
+  height: 6rem;
+  padding: 1rem 0;
   justify-content: center;
   align-items: center;
   background-color: grey;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.32);
-  transition: all 0.3s ease-in-out;
   z-index: 10;
 }
 
@@ -180,10 +176,13 @@ a:visited {
   font-family: "Londrina", solid;
 }
 
+.nav_header {
+  display: grid;
+}
+
 .ul_header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(26, 1fr);
   gap: 1rem;
   list-style: none;
   font-family: "Orbitron", sans-serif;
@@ -308,8 +307,9 @@ main {
   display: flex;
   height: 4rem;
   width: 4rem;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+  border: 3px solid rgb(255, 255, 255);
   animation: border 4s infinite;
 }
 
@@ -411,5 +411,11 @@ footer {
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ul_header {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
   }
 }/*# sourceMappingURL=styles.css.map */
