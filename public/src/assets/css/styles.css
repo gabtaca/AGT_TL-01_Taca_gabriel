@@ -163,6 +163,7 @@ a:visited {
 .header_page_minimize {
   transform: translateY(-5rem);
   padding: 3rem 0;
+  padding-bottom: 0.5rem;
   height: 10rem;
   align-items: center;
   justify-content: center;
