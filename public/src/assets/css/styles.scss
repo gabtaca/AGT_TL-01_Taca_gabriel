@@ -59,7 +59,7 @@ a:visited{
     padding-bottom: 0.5rem;
     height: 10rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #h1_header{
@@ -319,5 +319,9 @@ footer{
     .ul_header{
         display: grid;
         grid-template-columns: repeat(13, 1fr);
+        gap: 0.75rem;
+    }
+    .header_page_minimize{
+        height: 11rem;
     }
 }
